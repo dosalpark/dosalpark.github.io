@@ -16,5 +16,7 @@ jobs:
         run: chmod +x script/bootstrap
       - name: build
         run: script/bootstrap
+      - name: Set script permissions
+        run: chmod +x script/cibuild
       - name: test
         run: script/cibuild
